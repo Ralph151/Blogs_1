@@ -1,5 +1,8 @@
 package il.co.roeen.blogs.ACTIVITIES;
 
+import android.content.Intent;
+import android.os.Bundle;
+
 public class BlogPostActivity extends BaseActivity implements EntryValidation
 {
 
@@ -22,4 +25,11 @@ public class BlogPostActivity extends BaseActivity implements EntryValidation
     public boolean validate() {
         return false;
     }
+
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        finish();
+
+    }
+
 }
